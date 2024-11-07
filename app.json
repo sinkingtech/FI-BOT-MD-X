@@ -1,0 +1,96 @@
+{
+  "name": "FIBot",
+  "version": "3.0.5",
+  "description": "FI, A modular advanced whatsapp bot",
+  "logo": "https://telegra.ph/file/ca3524b5910d72a0844b7.jpg",
+  "keywords": ["whatsapp", "bot", "md", "multi-device", "FI", "V3", "wabot", "termux-bot", "sc-bot"],
+  "repository": "https://github.com/Dark-Xploit/FI-BOT",
+  "stack": "container",
+  "env": {
+    "OWNER_NUMBER": {
+      "description": "Enter your number here",
+      "required": true,
+      "value": "254796180105"
+    },
+    "OWNER_NAME": {
+      "description": "Enter your name here",
+      "required": true,
+      "value": "Tylor"
+    },
+     "HKEY": {
+      "description": "Enter your Heroku API key here , Get one from at https://dashboard.heroku.com/account",
+      "required": false,
+      "value": ""
+    },
+     "HAPP": {
+      "description": "Put the Heroku app name, same as above entered",
+      "required": false,
+      "value": ""
+    },
+    "PREFIX": {
+      "description": "Enter your desired prefix here",
+      "required": true,
+      "value": "."
+    },
+    "BOT_NAME": {
+      "description": "Enter Bot name here",
+      "required": false,
+      "value": "𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭"
+    },
+     "PACK_NAME": {
+      "description": "Enter Sticker pack name here",
+      "required": false,
+      "value": "𝘟𝘗𝘓𝘖𝘈𝘋𝘌𝘙"
+     },
+     "AUTHOR_NAME": {
+      "description": "Enter sticker author name here",
+      "required": false,
+      "value": "𝘉𝘖𝘛"
+     },
+     "PREMIUM_VIP": {
+      "description": "Enter numbers to be premium users [ Each Saperated By Comma ]",
+      "required": false,
+      "value": "254754783972,254796180105"
+     },
+    "WELCOME_MSG": {
+      "description": "Set true to enable and false to disable welcome/left messages in groups",
+      "required": false,
+      "value": "false"
+     },
+    "MENU_DESIGN": {
+      "description": "Choose a menu type 'v1' for iOS and Android user's or 'v2' for Android user's only",
+      "required": false,
+      "value": "v2"
+     },
+    "AUTO_STATUS_SEEN": {
+      "description": "Set true to enable and false to disable auto status view",
+      "required": false,
+      "value": "true"
+   },
+    "ANTI_CALL": {
+      "description": "Set true to enable and false to disable bot blocking user's who call you",
+      "required": false,
+      "value": "false"
+     },
+     "AUTO_BLOCK": {
+      "description": "Enter a country code to be auto blocked",
+      "required": false,
+      "value": "212"
+     }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
+
